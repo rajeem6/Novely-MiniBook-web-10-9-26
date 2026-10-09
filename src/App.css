@@ -13,6 +13,10 @@ html {
   overflow-x: hidden;
   background-color: black;
 }
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
 .container {
   width: 100%;
@@ -556,7 +560,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.library-header__pointer a{
+.library-header__pointer a {
   margin-top: 30%;
   margin-bottom: 30%;
   height: 0px;
@@ -573,7 +577,7 @@ a {
   animation:
     slideUpAnimate 1000ms ease backwards,
     headerScrollAnimate 1000ms infinite alternate-reverse;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .library-header__arrow:hover {
