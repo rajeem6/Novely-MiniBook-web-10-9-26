@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Playwrite+CU+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Edu QLD Hand;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+}
+
+.row {
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+:root {
+  --novely: rgb(238, 198, 160);
+  --chocolate: rgb(15, 9, 1);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* HOME PAGE */
+
+/* hero section */
+
+#novely-hero {
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 1px solid black;
+  background-image: url(/src/assets/novely-hero-optional.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.novely-hero__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+  background-color: rgba(0, 0, 0, 0.562);
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.novely-hero__title {
+  font-size: 69px;
+  color: var(--novely);
+}
+.novely-hero__para {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 20px 0;
+  color: white;
+}
+.novely-hero__btn {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--novely);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 300ms ease;
+}
+.novely-hero__btn:hover {
+  color: rgb(241, 217, 194);
+}
+
+/* nav */
+
+#novely-nav {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.63);
+  color: white;
+  right: 40px;
+  height: fit-content;
+  border-radius: 9px;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.novely-logo {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  color: var(--novely);
+  font-weight: 600;
+}
+
+.novely-nav__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60vh;
+}
+
+.novely-nav__row h1 {
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.novely-nav__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+  height: 10vh;
+}
+
+.novely-nav__link {
+  color: var(--novely);
+  border-bottom: 1px solid white;
+  width: fit-content;
+  transition: 300ms ease;
+}
+
+.novely-nav__link:hover {
+  color: rgb(241, 217, 194);
+  border-bottom-color: var(--novely);
+}
+
+.novely-footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 200;
+  height: 100%;
+}
+.novely-footer__link,
+.novely-footer__credit {
+  font-family: raleway;
+}
+
+/* horizontal nav */
+#nav__horizontal {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  display: none;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding: 0 20px;
+}
+.novely-nav__links-2 {
+  display: flex;
+  gap: 16px;
+}
+
+.novely-logo-2 {
+  color: var(--novely);
+  font-weight: 600;
+}
+
+/* novely explorer section (home)*/
+
+#novely-Explorer {
+  background-image: url(./assets/bg_01.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.genre__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  cursor: auto;
+  flex-shrink: 0;
+  min-width: 1258px;
+}
+.genre__list h1 {
+  font-size: 18px;
+}
+.novely-Explorer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.novely--featuring {
+  margin-top: 3%;
+  align-self: flex-start;
+  font-size: 19px;
+  font-weight: 600;
+  color: white;
+}
+
+.novely-Explorer__featured {
+  display: flex;
+  align-self: flex-start;
+  gap: 60px;
+  margin-top: 3%;
+  padding: 6%;
+  background-color: rgb(15, 9, 1);
+  border: 1px solid var(--novely);
+}
+.featured--book {
+  height: 360px;
+  width: 300px;
+}
+#novely-bigBook1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 10px -1px white;
+}
+#novely-bigBook1:hover .novely-book-details {
+  visibility: visible;
+  opacity: 1;
+}
+#novely-bigBook1:hover .novely-book-img {
+  scale: 1.1;
+}
+.featured--book--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.featured--book--btn {
+  background-color: transparent;
+  border: 1px solid var(--novely);
+  color: var(--novely);
+  padding: 2px 6px;
+  cursor: pointer;
+  transition: 300ms ease;
+  text-align: center;
+}
+.featured--book--btn:hover {
+  color: rgb(241, 217, 194);
+  border-color: rgb(241, 217, 194);
+}
+
+.novely-Explorer__title {
+  color: var(--novely);
+  margin-bottom: 6%;
+}
+
+.novely-Explorer__search {
+  border: none;
+  outline: none;
+  width: 30%;
+  padding: 6px;
+  background-color: transparent;
+  border: 1px solid var(--novely);
+  color: white;
+  transition: 300ms ease;
+  cursor: not-allowed;
+}
+.novely-Explorer__search::placeholder {
+  color: var(--novely);
+}
+.novely-Explorer__search:focus {
+  border-color: var(--novely);
+  cursor: text;
+}
+.novely-Explorer__search:focus::placeholder {
+  color: rgb(241, 217, 194);
+  border-color: var(--novely);
+}
+
+.novely-Explorer__books__list {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  background-color: rgb(15, 9, 1);
+  padding: 36px 0px;
+  border: 1px solid var(--novely);
+}
+
+/* BOOK */
+
+#novely-book {
+  width: 200px;
+  height: 246px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 10px -1px white;
+}
+#novely-book:hover .novely-book-details {
+  visibility: visible;
+  opacity: 1;
+}
+#novely-book:hover .novely-book-img {
+  scale: 1.1;
+}
+
+.novely-book-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 600ms ease;
+}
+.novely-book-details {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.562);
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 600ms ease;
+}
+
+.book-title {
+  font-size: 12px;
+  margin-bottom: 16%;
+  text-align: center;
+}
+.book-author {
+  max-width: 80%;
+  font-size: 12px;
+}
+
+.novely-book-btn {
+  margin-top: 16%;
+  cursor: pointer;
+  padding: 0 6px;
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--novely);
+  font-weight: 600;
+}
+
+/* novely (footer) REVIEW */
+
+#novely-review {
+  background-image: url(./assets/blackfade.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+}
+
+.novely-review__row {
+  display: flex;
+  gap: 20%;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+.novely-review__forn__heading-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.novely-review__title {
+  font-size: 28px;
+  color: white;
+}
+.novely-review__para {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+.novely-review__form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+  padding: 6%;
+  border: 1px solid var(--novely);
+  background-color: rgb(15, 9, 1);
+}
+.novely-review__forn__heading-2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.novely-review__form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.novely-review__form__review {
+  width: 300px;
+  max-height: 246px;
+  resize: vertical;
+  padding: 9px;
+  outline: none;
+  border: 1px solid var(--novely);
+  background-color: black;
+}
+.novely-review__form__review::placeholder {
+  color: white;
+}
+.rating {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  height: 20%;
+  padding: 6px;
+  color: rgb(255, 208, 0);
+}
+
+/* HOME PAGE MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+  /* hero */
+  .novely-hero__row {
+    position: relative;
+    right: 12%;
+  }
+}
+
+@media (max-width: 900px) {
+  /* nav */
+  #novely-nav {
+    display: none;
+  }
+  .novely-logo {
+    display: none;
+  }
+  #nav__horizontal {
+    display: block;
+  }
+
+  /* hero */
+  .novely-hero__row {
+    position: static;
+  }
+
+  /* novely explorer section */
+  .novely-Explorer__search {
+    width: 50%;
+  }
+
+  /* novely review section */
+  .novely-review__row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .novely-review__forn__heading-1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  /* featured book */
+  .novely-Explorer__featured {
+    flex-direction: column;
+    align-self: center;
+    gap: 20px;
+    margin: 20px 10px;
+  }
+  .featured--book--btn {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  /* hero */
+  .novely-hero__title {
+    font-size: 36px;
+  }
+  .novely-hero__para {
+    font-size: 20px;
+  }
+  .novely-hero__btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  /* nav */
+  .novely-logo-2 {
+    display: none;
+  }
+  .nav__contianer {
+    justify-content: center;
+  }
+  .novely-nav__links-2 {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/* LIBRARY PAGE */
+
+/* library header */
+#library-header {
+  background-color: rgb(15, 9, 1);
+}
+
+.library-header__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--novely);
+}
+
+.library-header__search {
+  margin-top: 48px;
+  width: 300px;
+  padding: 8px;
+  background-color: transparent;
+  color: var(--novely);
+  border: 1px solid var(--novely);
+  outline: none;
+  cursor: not-allowed;
+  transition: 300ms ease;
+}
+.library-header__search::placeholder {
+  color: var(--novely);
+}
+.library-header__search:focus {
+  color: rgb(241, 217, 194);
+  border-color: rgb(241, 217, 194);
+}
+
+.line--break {
+  padding: 1px;
+  max-width: 100%;
+  width: 100%;
+  background-color: var(--novely);
+  margin-top: 6%;
+  margin-bottom: 3%;
+}
+
+/* library main */
+#library-Main {
+  background-color: rgb(15, 9, 1);
+}
+
+.library-main__row {
+  display: flex;
+  flex-direction: column;
+  color: var(--novely);
+}
+
+.library-main__featured {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 60px;
+  max-width: 100%;
+  width: 100%;
+}
+.main--featured--book {
+  max-width: 300px;
+  width: 100%;
+  height: 450px;
+}
+
+.main--genre--list--wrapper {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.main--genre--title {
+  font-weight: 300;
+}
+
+.main--genre--list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 69%;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 16px;
+}
+.genre--btn {
+  padding: 3px 12px;
+  width: fit-content;
+  border: 1px solid var(--novely);
+  border-radius: 30px;
+  outline: none;
+  color: var(--novely);
+  background-color: transparent;
+  transition: 400ms ease;
+}
+.genre--btn:focus {
+  background-color: var(--novely);
+  color: rgb(15, 9, 1);
+}
+.library-main-para-2 {
+  margin-top: 3%;
+}
+
+.library-main__books__list {
+  margin-top: 6%;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* SELECT PAGE */
+#selected {
+  background-color: var(--chocolate);
+}
+
+.selected__row {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.selected__title {
+  margin: 6% 0;
+}
+
+.selected__img__wrapper {
+  max-width: 400px;
+  height: 600px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 2px 10px -1px white;
+  margin-bottom: 3%;
+}
+.selected__img {
+  width: 100%;
+  height: 100%;
+}
+
+.selected-info-1{
+  margin-bottom: 2%;
+  margin-top: 3%;
+}
+.suggestions__title-2{
+  font-size: 16px;
+  margin-top: 1%;
+}
+
+/* SELECTED PAGE MEDIA QUERIEZ */
+
+@media (max-width: 900px){
+  .selected__row{
+    align-items: center;
+  }
+}
