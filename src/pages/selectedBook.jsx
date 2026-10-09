@@ -13,7 +13,7 @@ const SelectedBook = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [selectedBook]);
   return (
     <>
       <section id="selected">
