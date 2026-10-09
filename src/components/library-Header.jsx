@@ -1,3 +1,5 @@
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const LibraryHeader = () => {
@@ -10,12 +12,14 @@ const LibraryHeader = () => {
             <p className="library-header__para">
               Find something worth getting lost in.
             </p>
-            <input
-            disabled
-              type="text"
-              placeholder="Coming Soon..."
-              className="library-header__search"
-            />
+            <a className="library-header__pointer">
+              <a href="#library-Main">
+                <FontAwesomeIcon
+                  icon={faArrowDown}
+                  className="library-header__arrow"
+                />
+              </a>
+            </a>
             <div className="line--break"></div>
           </div>
         </div>

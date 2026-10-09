@@ -23,12 +23,9 @@ const NovelyHomeExplorer = () => {
         <div className="container">
           <div className="row novely-Explorer__row">
             <h2 className="novely-Explorer__title">{`{ Pick Your Novel }`}</h2>
-            <input
-              disabled
-              type="text"
-              placeholder="...Not Implemented Yet!"
-              className="novely-Explorer__search"
-            />
+           <p className="novely-Explorer__para">
+            Straight out of our mini, Novely, library; featuring Novely picks...
+           </p>
             <span className="novely--featuring">Novely, featuring:</span>
             <div className="novely-Explorer__featured">
               <div className="featured--book">

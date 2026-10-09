@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import img from "../assets/novely-book.webp";
 import { AppContext } from "../Context/appContext";
 import NovelyBook from "../ui/novely-book";
@@ -10,6 +10,10 @@ const SelectedBook = () => {
   const { id } = useParams();
 
   const selectedBook = books.find((book) => book.id === Number(id));
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <section id="selected">
@@ -29,7 +33,7 @@ const SelectedBook = () => {
             <h2 className="suggestions__title">Still turning pages?</h2>
             <h6 className="suggestions__title-2">You might enjoy these too.</h6>
             <div className="library-main__books__list">
-              {books.slice(0-5).map((books) => {
+              {books.slice(0 - 5).map((books) => {
                 if (books.id !== selectedBook.id) {
                   return (
                     <NovelyBook
